@@ -5,7 +5,7 @@ export interface IButtonProps {
   label: string;
 }
 
-export function Button(props: IButtonProps) {
+export default function Button(props: IButtonProps) {
   const { label } = props;
   return (
     <ButttonWrapper>

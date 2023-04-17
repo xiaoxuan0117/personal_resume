@@ -3,7 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 
 import styled, { ThemeProvider } from "styled-components";
-import { Button } from "../components/atoms/Button";
+import Button from "../components/atoms/Button";
+import Navi from "../components/molecules/Navi";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,7 +30,9 @@ export default function Home() {
       </Head>
       <ThemeProvider theme={theme}>
         <main>
-          <Button label="About" />
+          <Navi
+            menu={["About", "Experience", "Works", "Skills", "Contsct"]}
+          ></Navi>
         </main>
       </ThemeProvider>
     </>

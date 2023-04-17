@@ -7,6 +7,7 @@ export const ButttonWrapper = styled.div`
   background-color: ${(props) => props.theme.primary};
   padding: 2px;
   border-radius: 18px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 20px;
