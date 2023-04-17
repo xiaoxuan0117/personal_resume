@@ -4,6 +4,7 @@ import { INaviProps } from ".";
 export const NaviWrapper = styled.div<{ scroll: boolean }>`
   display: block;
   position: fixed;
+  z-index: 10;
   width: 100%;
   height: max-content;
   transition: all 0.5s;
