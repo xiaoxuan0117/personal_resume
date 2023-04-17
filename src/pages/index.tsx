@@ -7,6 +7,7 @@ import Button from "../components/atoms/Button";
 import Navi from "../components/molecules/Navi";
 import ShadowVertical from "../components/atoms/ShadowVertical";
 import ShadowInclined from "../components/atoms/ShadowInclined";
+import Banner from "../components/organisms/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function Home() {
           <Navi
             menu={["About", "Experience", "Works", "Skills", "Contsct"]}
           ></Navi>
+          <Banner />
         </main>
       </ThemeProvider>
     </>
