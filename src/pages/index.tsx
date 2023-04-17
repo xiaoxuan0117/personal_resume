@@ -5,6 +5,8 @@ import { Inter } from "next/font/google";
 import styled, { ThemeProvider } from "styled-components";
 import Button from "../components/atoms/Button";
 import Navi from "../components/molecules/Navi";
+import ShadowVertical from "../components/atoms/ShadowVertical";
+import ShadowInclined from "../components/atoms/ShadowInclined";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +19,7 @@ export const theme = {
   black: "#000000",
   darkShadow: "rgba(0,0,0, 0.25)",
   lightShadow: "rgba(255,255,255, 0.6)",
+  bgShadow: "#E0E1DB",
 };
 
 export default function Home() {
@@ -30,6 +33,9 @@ export default function Home() {
       </Head>
       <ThemeProvider theme={theme}>
         <main>
+          <ShadowVertical />
+          <ShadowInclined thick={false} />
+          <ShadowInclined thick={true} />
           <Navi
             menu={["About", "Experience", "Works", "Skills", "Contsct"]}
           ></Navi>
