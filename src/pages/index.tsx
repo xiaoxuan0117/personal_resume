@@ -9,6 +9,7 @@ import ShadowVertical from "../components/atoms/ShadowVertical";
 import ShadowInclined from "../components/atoms/ShadowInclined";
 import Banner from "../components/organisms/Banner";
 import About from "../components/organisms/About";
+import Experience from "../components/organisms/Experience";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default function Home() {
           ></Navi>
           <Banner />
           <About />
+          <Experience />
         </main>
       </ThemeProvider>
     </>
