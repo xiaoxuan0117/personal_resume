@@ -9,6 +9,8 @@ import {
   Title,
   CompanyExp,
   CompanyDetail,
+  SchoolExp,
+  SchoolDetail,
 } from "./index.style";
 import Image from "next/image";
 import Project from "../../molecules/Project";
@@ -17,6 +19,7 @@ export interface IExperienceProps {}
 
 export default function Experience(props: IExperienceProps) {
   const companyContentRef = useRef(null);
+  const schoolContentRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -27,6 +30,21 @@ export default function Experience(props: IExperienceProps) {
           end: "bottom top",
           toggleClass: "active",
           once: true,
+          // markers: {
+          //   startColor: "red",
+          //   endColor: "green",
+          //   fontSize: "3rem",
+          // },
+        },
+      });
+
+      gsap.to(schoolContentRef.current, {
+        scrollTrigger: {
+          trigger: schoolContentRef.current,
+          start: "top bottom",
+          end: "bottom top",
+          toggleClass: "active",
+          // once: true,
           // markers: {
           //   startColor: "red",
           //   endColor: "green",
@@ -58,6 +76,20 @@ export default function Experience(props: IExperienceProps) {
           <Project />
           <Project />
         </CompanyExp>
+        <SchoolExp>
+          <SchoolDetail ref={schoolContentRef}>
+            <div className="duration">2018/9-2022/6</div>
+            <div className="schoolName">
+              畢業於成功大學 <br />
+              主修地科系 / 雙主修工業與資訊管理系
+            </div>
+            校園活動經驗
+            <ul>
+              <li>成大流行歌唱社美宣與行政</li>
+              <li>成大地球科學系活動與體幹</li>
+            </ul>
+          </SchoolDetail>
+        </SchoolExp>
       </ExperienceContent>
     </ExperienceWrapper>
   );

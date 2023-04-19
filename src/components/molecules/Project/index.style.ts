@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const ProjectWapper = styled.div`
   position: relative;
-  top: 50px;
-  margin-bottom: 100px;
-  transition: top 0.5s ease-in-out;
+  margin-top: 90px;
+  padding-top: 50px;
+  transition: padding-top 0.5s ease-in-out;
 
   &.active {
-    top: 0px;
+    padding-top: 0px;
   }
 
   & > img {

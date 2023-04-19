@@ -25,6 +25,7 @@ export const CompanyExp = styled.div`
   position: relative;
   border-left: 1px solid ${(props) => props.theme.gray};
   overflow-x: hidden;
+  margin-bottom: 90px;
 `;
 
 export const CompanyDetail = styled.div`
@@ -55,53 +56,36 @@ export const CompanyDetail = styled.div`
   }
 `;
 
-export const ProjectWapper = styled.div`
+export const SchoolExp = styled.div`
   position: relative;
-  top: 50px;
-  margin-bottom: 100px;
-  transition: top 0.5s ease-in-out;
-
-  &.active {
-    top: 0px;
-  }
-
-  & > img {
-    position: relative;
-    left: -20px;
-    margin-bottom: 40px;
-    transition: left 0.5s ease-in-out;
-
-    &.active {
-      left: 0px;
-    }
-  }
+  border-left: 1px solid ${(props) => props.theme.gray};
+  overflow: hidden;
 `;
 
-export const ProjectDetail = styled.div`
+export const SchoolDetail = styled.div`
   position: relative;
   margin-left: 16px;
+  padding-top: 50px;
+  transition: padding-top 0.5s ease-in-out;
 
-  & > .projectName {
-    font-size: 20px;
+  &.active {
+    padding-top: 0;
+  }
+
+  & > .duration,
+  .schoolName {
+    font-size: 16px;
     font-weight: 700;
-    margin-bottom: 5px;
-    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
   }
 
-  & > .projectTags {
-    display: flex;
-    margin-bottom: 19px;
-
-    & .tag {
-      margin-right: 10px;
-    }
-  }
-
-  & > .projectSummary {
+  & > .schoolSummary {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.05em;
     line-height: 20px;
+    margin-left: 49px;
   }
 
   & > ul li {
