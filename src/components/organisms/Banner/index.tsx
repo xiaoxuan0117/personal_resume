@@ -21,11 +21,11 @@ export default function Banner(props: IBannerProps) {
           trigger: bannerRef.current,
           scrub: 1,
           start: "top top",
-          markers: {
-            startColor: "purple",
-            endColor: "fuchsia",
-            fontSize: "3rem",
-          },
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "fuchsia",
+          //   fontSize: "3rem",
+          // },
         },
       });
     });

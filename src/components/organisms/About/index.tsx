@@ -24,11 +24,11 @@ export default function About(props: IAboutProps) {
           trigger: aboutRef.current,
           scrub: 1,
           start: "top bottom",
-          markers: {
-            startColor: "purple",
-            endColor: "fuchsia",
-            fontSize: "3rem",
-          },
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "fuchsia",
+          //   fontSize: "3rem",
+          // },
         },
       });
 
@@ -38,11 +38,11 @@ export default function About(props: IAboutProps) {
           trigger: aboutRef.current,
           scrub: 1,
           start: "top bottom",
-          markers: {
-            startColor: "purple",
-            endColor: "fuchsia",
-            fontSize: "3rem",
-          },
+          // markers: {
+          //   startColor: "purple",
+          //   endColor: "fuchsia",
+          //   fontSize: "3rem",
+          // },
         },
       });
     });

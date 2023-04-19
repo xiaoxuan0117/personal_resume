@@ -31,6 +31,12 @@ export const CompanyDetail = styled.div`
   position: relative;
   margin-left: 16px;
   padding-bottom: 62px;
+  top: 50px;
+  transition: top 0.5s ease-in-out;
+
+  &.active {
+    top: 0px;
+  }
 
   & > .duration,
   .companyName {
@@ -51,12 +57,23 @@ export const CompanyDetail = styled.div`
 
 export const ProjectWapper = styled.div`
   position: relative;
+  top: 50px;
   margin-bottom: 100px;
+  transition: top 0.5s ease-in-out;
+
+  &.active {
+    top: 0px;
+  }
 
   & > img {
     position: relative;
     left: -20px;
     margin-bottom: 40px;
+    transition: left 0.5s ease-in-out;
+
+    &.active {
+      left: 0px;
+    }
   }
 `;
 
