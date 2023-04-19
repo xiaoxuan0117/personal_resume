@@ -9,11 +9,13 @@ import {
 } from "./index.style";
 import Image from "next/image";
 
-export interface IAboutContentProps {}
+export interface IAboutContentProps {
+  contentRef: React.RefObject<HTMLDivElement>;
+}
 
 export default function AboutContent(props: IAboutContentProps) {
   return (
-    <AboutContentWrapper>
+    <AboutContentWrapper ref={props.contentRef}>
       <AboutContentFlex>
         <Left>
           <Image
