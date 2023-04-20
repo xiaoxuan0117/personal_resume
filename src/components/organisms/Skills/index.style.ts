@@ -6,7 +6,7 @@ export const SkillsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  margin-bottom: 200px;
 `;
 
 export const SkillsContent = styled.div`

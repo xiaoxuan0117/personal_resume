@@ -7,6 +7,7 @@ export const LinksWrapper = styled.div`
   position: fixed;
   bottom: 0;
   right: 36px;
+  z-index: 10;
 
   & a {
     display: block;

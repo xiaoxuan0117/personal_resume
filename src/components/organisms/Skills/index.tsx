@@ -18,7 +18,7 @@ export default function Skills(props: ISkillsProps) {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.to(decoRef.current, {
-        y: -200,
+        y: -100,
         scrollTrigger: {
           trigger: skillsRef.current,
           scrub: 1,
@@ -41,9 +41,9 @@ export default function Skills(props: ISkillsProps) {
       <DecoText
         decoRef={decoRef}
         text="Skills"
-        quantity={4}
-        left="-32%"
-        top="50%"
+        quantity={3}
+        left="-23%"
+        top="70%"
         rotate={-90}
       />
       <SkillsContent>
