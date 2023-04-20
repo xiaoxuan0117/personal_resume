@@ -73,8 +73,50 @@ export default function Experience(props: IExperienceProps) {
               以下列在各個專案中完成的工作項目。
             </div>
           </CompanyDetail>
-          <Project />
-          <Project />
+          <Project
+            name="相機品牌電商優化"
+            tags={["React", "Redux", "Redux-observable", "classnames"]}
+            summary="實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與
+          PM 、後端溝通的能力。"
+            list={[
+              "實習期間有獨立完成網站維護的",
+              "實習期間有獨立完成網站維護的經",
+              "實習期間有獨立完成網站維護的經驗",
+            ]}
+          />
+          <Project
+            name="相機品牌官網維護"
+            tags={["JavaScript", "JQuery", "SFTP"]}
+            summary="實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與
+          PM 、後端溝通的能力。"
+            list={[
+              "實習期間有獨立完成網站維護的",
+              "實習期間有獨立完成網站維護的經",
+              "實習期間有獨立完成網站維護的經驗",
+            ]}
+          />
+          <Project
+            name="汽車品牌點數系統"
+            tags={["React", "i18next"]}
+            summary="實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與
+          PM 、後端溝通的能力。"
+            list={[
+              "實習期間有獨立完成網站維護的",
+              "實習期間有獨立完成網站維護的經",
+              "實習期間有獨立完成網站維護的經驗",
+            ]}
+          />
+          <Project
+            name="航空公司商城維護"
+            tags={["JavaScript", "JQuery", "sass"]}
+            summary="實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與
+          PM 、後端溝通的能力。"
+            list={[
+              "實習期間有獨立完成網站維護的",
+              "實習期間有獨立完成網站維護的經",
+              "實習期間有獨立完成網站維護的經驗",
+            ]}
+          />
         </CompanyExp>
         <SchoolExp>
           <SchoolDetail ref={schoolContentRef}>

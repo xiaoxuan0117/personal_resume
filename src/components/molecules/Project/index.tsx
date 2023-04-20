@@ -6,10 +6,15 @@ gsap.registerPlugin(ScrollTrigger);
 import { ProjectWapper, ProjectDetail } from "./index.style";
 import Image from "next/image";
 
-export interface IProjectProps {}
+export interface IProjectProps {
+  name: string;
+  tags: string[];
+  summary: string;
+  list: string[];
+}
 
 export default function Project(props: IProjectProps) {
-  const tags = ["React", "Redux", "Redux-observable", "classnames"];
+  const { name, tags, summary, list } = props;
   const flagRef = useRef(null);
   const projectRef = useRef(null);
   useEffect(() => {
@@ -60,7 +65,7 @@ export default function Project(props: IProjectProps) {
         ref={flagRef}
       />
       <ProjectDetail>
-        <div className="projectName">相機品牌電商優化</div>
+        <div className="projectName">{name}</div>
         <div className="projectTags">
           {tags.map((item) => (
             <div key={item} className="tag">
@@ -68,17 +73,11 @@ export default function Project(props: IProjectProps) {
             </div>
           ))}
         </div>
-        <div className="projectSummary">
-          實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與
-          PM 、後端溝通的能力。
-        </div>
+        <div className="projectSummary">{summary}</div>
         <ul>
-          <li>
-            實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與
-            PM 、後端溝通的能力。
-          </li>
-          <li>實習期間有獨立完成網站維護的經驗</li>
-          <li>實習期間有獨立完成網站維護的經驗</li>
+          {list.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
         </ul>
       </ProjectDetail>
     </ProjectWapper>
