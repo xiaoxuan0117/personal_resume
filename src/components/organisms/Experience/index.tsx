@@ -44,7 +44,7 @@ export default function Experience(props: IExperienceProps) {
           start: "top bottom",
           end: "bottom top",
           toggleClass: "active",
-          // once: true,
+          once: true,
           // markers: {
           //   startColor: "red",
           //   endColor: "green",
