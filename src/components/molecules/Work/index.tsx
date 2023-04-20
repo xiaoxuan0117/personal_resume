@@ -1,4 +1,8 @@
-import * as React from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 import {
   WorkWrapper,
   WorkContent,
@@ -21,8 +25,34 @@ export interface IWorkProps {
 
 export default function Work(props: IWorkProps) {
   const { title, tags, description, images, links, github, index } = props;
+
+  const workRef = useRef(null);
+  const detailRef = useRef(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.to(detailRef.current, {
+        yPercent: -20,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: detailRef.current,
+          start: "top bottom",
+          once: true,
+          // markers: {
+          //   startColor: "red",
+          //   endColor: "green",
+          //   fontSize: "3rem",
+          // },
+        },
+      });
+    });
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
+
   return (
-    <WorkWrapper>
+    <WorkWrapper ref={workRef}>
       <WorkContent index={index}>
         <Preview index={index}>
           <a href={links[0]} className="workUrl" target="_blank">
@@ -32,7 +62,7 @@ export default function Work(props: IWorkProps) {
             </ImageBox>
           </a>
         </Preview>
-        <Detail index={index}>
+        <Detail index={index} ref={detailRef}>
           <div className="title">{title}</div>
           <div className="worksTags">
             {tags.map((item) => (

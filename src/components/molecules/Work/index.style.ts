@@ -19,7 +19,7 @@ export const Detail = styled.div<{ index: number }>`
   position: absolute;
   left: ${(props) => props.index % 2 === 0 && "0"};
   right: ${(props) => props.index % 2 !== 0 && "0"};
-  top: 156px;
+  top: 200px;
   width: 319px;
   background-color: ${(props) => props.theme.primary};
   border-radius: 8px;
