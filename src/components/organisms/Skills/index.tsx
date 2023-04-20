@@ -47,7 +47,7 @@ export default function Skills(props: ISkillsProps) {
         rotate={-90}
       />
       <SkillsContent>
-        <Title>Skills</Title>
+        <Title>Skills.</Title>
         <Skill
           title="Web Developement"
           skillGroup={[
