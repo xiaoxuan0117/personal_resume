@@ -6,11 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 import { AboutWrapper, DecoAbout, DecoAboutText } from "./index.style";
 import Image from "next/image";
 import AboutContent from "../../molecules/AboutContent";
+import DecoText from "../../atoms/DecoText";
 
 export interface IAboutProps {}
 
 export default function About(props: IAboutProps) {
-  const content = Array(6).fill("About");
   const aboutRef = useRef(null);
   const contentRef = useRef(null);
   const decoRef = useRef(null);
@@ -54,11 +54,7 @@ export default function About(props: IAboutProps) {
   return (
     <AboutWrapper ref={aboutRef}>
       <AboutContent contentRef={contentRef} />
-      <DecoAbout ref={decoRef}>
-        {content.map((item, index) => (
-          <DecoAboutText key={index}>{item}</DecoAboutText>
-        ))}
-      </DecoAbout>
+      <DecoText decoRef={decoRef} text="About" quantity={6} from="right" />
     </AboutWrapper>
   );
 }
