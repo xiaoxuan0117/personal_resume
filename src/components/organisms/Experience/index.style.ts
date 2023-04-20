@@ -5,6 +5,7 @@ export const ExperienceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px;
 `;
 
 export const ExperienceContent = styled.div`

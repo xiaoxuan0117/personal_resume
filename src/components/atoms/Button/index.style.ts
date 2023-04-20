@@ -11,6 +11,7 @@ export const ButttonWrapper = styled.div`
   font-weight: 600;
   letter-spacing: 0.05em;
   line-height: 20px;
+  color: ${(props) => props.theme.gray};
   vertical-align: center;
   box-shadow: 2px 2px 4px 0 ${(props) => props.theme.darkShadow};
 
