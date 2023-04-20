@@ -42,9 +42,7 @@ export default function Home() {
           <ShadowVertical />
           <ShadowInclined thick={false} />
           <ShadowInclined thick={true} />
-          <Navi
-            menu={["About", "Experience", "Works", "Skills", "Contsct"]}
-          ></Navi>
+          <Navi menu={["About", "Experience", "Works", "Skills"]}></Navi>
           <Banner />
           <About />
           <Experience />

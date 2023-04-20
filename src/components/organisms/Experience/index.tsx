@@ -59,7 +59,7 @@ export default function Experience(props: IExperienceProps) {
     };
   }, []);
   return (
-    <ExperienceWrapper>
+    <ExperienceWrapper id="experience">
       <ExperienceContent>
         <Title>Experience.</Title>
         <CompanyExp>

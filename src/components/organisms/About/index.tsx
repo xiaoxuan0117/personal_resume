@@ -52,7 +52,7 @@ export default function About(props: IAboutProps) {
   }, []);
 
   return (
-    <AboutWrapper ref={aboutRef}>
+    <AboutWrapper id="about" ref={aboutRef}>
       <AboutContent contentRef={contentRef} />
       <DecoText
         decoRef={decoRef}

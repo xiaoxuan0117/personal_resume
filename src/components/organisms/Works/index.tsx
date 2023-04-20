@@ -78,7 +78,7 @@ export default function Works(props: IWorksProps) {
     };
   }, []);
   return (
-    <WorksWrapper ref={worksRef}>
+    <WorksWrapper id="works" ref={worksRef}>
       <WorksContent>
         <Title>Works.</Title>
         <DecoText decoRef={decoRef} text="Works" quantity={8} left="-40%" />

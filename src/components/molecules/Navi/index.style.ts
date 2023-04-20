@@ -42,4 +42,8 @@ export const MenuWrapper = styled.div`
 export const Menu = styled.div`
   display: block;
   margin: 10px 0 10px 13px;
+
+  & > a {
+    text-decoration: none;
+  }
 `;

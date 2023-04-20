@@ -32,7 +32,9 @@ export default function Navi(props: INaviProps) {
         <MenuWrapper>
           {menu.map((item) => (
             <Menu key={item}>
-              <Button label={item} />
+              <a href={`#${item.toLocaleLowerCase()}`}>
+                <Button label={item} />
+              </a>
             </Menu>
           ))}
         </MenuWrapper>

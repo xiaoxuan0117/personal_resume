@@ -37,7 +37,7 @@ export default function Skills(props: ISkillsProps) {
     };
   }, []);
   return (
-    <SkillsWrapper ref={skillsRef}>
+    <SkillsWrapper id="skills" ref={skillsRef}>
       <DecoText
         decoRef={decoRef}
         text="Skills"
