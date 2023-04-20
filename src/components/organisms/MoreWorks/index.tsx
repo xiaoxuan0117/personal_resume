@@ -47,12 +47,7 @@ export default function MoreWorks(props: IMoreWorksProps) {
   return (
     <MoreWorksWrapper ref={moreWorksRef}>
       <MoreWorksContent>
-        <DecoText
-          decoRef={decoRef}
-          text="More Works"
-          quantity={8}
-          from="right"
-        />
+        <DecoText decoRef={decoRef} text="More Works" quantity={8} left="40%" />
         <MoreWork {...moreWorkDetailZero} />
         <MoreWork {...moreWorkDetailZero} />
         <MoreWork {...moreWorkDetailZero} />

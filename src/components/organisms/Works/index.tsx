@@ -81,7 +81,7 @@ export default function Works(props: IWorksProps) {
     <WorksWrapper ref={worksRef}>
       <WorksContent>
         <Title>Works.</Title>
-        <DecoText decoRef={decoRef} text="Works" quantity={8} from="left" />
+        <DecoText decoRef={decoRef} text="Works" quantity={8} left="-40%" />
         <Work {...workDetailZero} />
         <Work {...workDetailOne} />
         <MoreWorks />

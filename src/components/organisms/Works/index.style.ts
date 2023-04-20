@@ -5,6 +5,7 @@ export const WorksWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 200px;
 `;
 
 export const WorksContent = styled.div`

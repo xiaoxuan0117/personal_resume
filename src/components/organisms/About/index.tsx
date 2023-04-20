@@ -58,7 +58,7 @@ export default function About(props: IAboutProps) {
         decoRef={decoRef}
         text="About"
         quantity={6}
-        from="right"
+        left="40%"
         top="20%"
       />
     </AboutWrapper>
