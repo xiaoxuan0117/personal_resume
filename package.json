@@ -17,9 +17,13 @@
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "gsap": "^3.11.5",
+    "i18next": "^22.4.15",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.2.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^12.2.0",
     "styled-components": "^5.3.9",
     "swiper": "^9.2.3",
     "typescript": "5.0.4"
