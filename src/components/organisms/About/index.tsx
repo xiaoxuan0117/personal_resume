@@ -3,7 +3,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-import { AboutWrapper, DecoAbout, DecoAboutText } from "./index.style";
+import { AboutWrapper } from "./index.style";
 import Image from "next/image";
 import AboutContent from "../../molecules/AboutContent";
 import DecoText from "../../atoms/DecoText";
@@ -54,7 +54,13 @@ export default function About(props: IAboutProps) {
   return (
     <AboutWrapper ref={aboutRef}>
       <AboutContent contentRef={contentRef} />
-      <DecoText decoRef={decoRef} text="About" quantity={6} from="right" />
+      <DecoText
+        decoRef={decoRef}
+        text="About"
+        quantity={6}
+        from="right"
+        top="20%"
+      />
     </AboutWrapper>
   );
 }

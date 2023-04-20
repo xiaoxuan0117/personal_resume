@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Deco = styled.div<{ from: string }>`
+export const Deco = styled.div<{ from: string; top?: string }>`
   display: flex;
   position: absolute;
   z-index: -1;
-  top: 20%;
+  top: ${(props) => (props.top ? props.top : "0")};
   left: ${(props) => (props.from === "right" ? "40%" : "-40%")};
 `;
 
