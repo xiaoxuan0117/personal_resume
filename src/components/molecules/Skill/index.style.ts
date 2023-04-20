@@ -18,6 +18,7 @@ export const SkillContent = styled.div`
 export const Left = styled.div`
   position: relative;
   width: 30%;
+  min-width: 250px;
   font-size: 32px;
   font-weight: 700;
   text-align: end;
