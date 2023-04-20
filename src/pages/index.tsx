@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import styled, { ThemeProvider } from "styled-components";
 import Button from "../components/atoms/Button";
@@ -26,6 +28,23 @@ export const theme = {
   darkShadow: "rgba(0,0,0, 0.25)",
   lightShadow: "rgba(255,255,255, 0.6)",
   bgShadow: "#E0E1DB",
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const locale = context.locale!;
+
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "banner",
+        "about",
+        "experience",
+        "works",
+        "skills",
+        "contact",
+      ])),
+    },
+  };
 };
 
 export default function Home() {
