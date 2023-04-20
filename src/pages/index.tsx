@@ -11,6 +11,7 @@ import Banner from "../components/organisms/Banner";
 import About from "../components/organisms/About";
 import Experience from "../components/organisms/Experience";
 import Works from "../components/organisms/Works";
+import Skills from "../components/organisms/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,6 +48,7 @@ export default function Home() {
           <About />
           <Experience />
           <Works />
+          <Skills />
         </main>
       </ThemeProvider>
     </>
