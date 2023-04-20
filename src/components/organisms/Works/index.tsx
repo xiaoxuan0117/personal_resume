@@ -8,6 +8,7 @@ import Button from "../../atoms/Button";
 import Links from "../../molecules/Links";
 import DecoText from "../../atoms/DecoText";
 import Work from "../../molecules/Work";
+import MoreWorks from "../MoreWorks";
 
 export interface IWorksProps {}
 
@@ -83,6 +84,7 @@ export default function Works(props: IWorksProps) {
         <DecoText decoRef={decoRef} text="Works" quantity={8} from="left" />
         <Work {...workDetailZero} />
         <Work {...workDetailOne} />
+        <MoreWorks />
       </WorksContent>
     </WorksWrapper>
   );

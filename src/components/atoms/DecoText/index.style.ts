@@ -12,5 +12,6 @@ export const DecoContent = styled.div`
   font-size: 64px;
   font-weight: 900;
   color: ${(props) => props.theme.lightGray};
+  white-space: nowrap;
   margin-right: 24px;
 `;
