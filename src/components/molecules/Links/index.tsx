@@ -1,12 +1,33 @@
-import * as React from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import { LinksWrapper, DecoLine } from "./index.style";
 import Image from "next/image";
+import Link from "next/link";
 
 export interface ILinksProps {}
 
 export default function Links(props: ILinksProps) {
+  const router = useRouter();
+  const { pathname } = router;
+  const [lng, setLng] = useState<string>("en");
   return (
     <LinksWrapper>
+      <Link
+        locale={lng}
+        href={{ pathname: `/${lng}` }}
+        onClick={() => {
+          const newLng = lng === "en" ? "zh-TW" : "en";
+          setLng(newLng);
+        }}
+      >
+        <Image
+          priority
+          src="/images/i18nIcon.svg"
+          width={30}
+          height={30}
+          alt=""
+        />
+      </Link>
       <a href="mailto: xiaoxuanpan0117@gmail.com" target="_blank">
         <Image
           priority
