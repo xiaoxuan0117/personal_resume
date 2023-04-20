@@ -7,6 +7,7 @@ export const SkillsWrapper = styled.div`
   align-items: center;
   width: 100%;
   margin-bottom: 200px;
+  padding-top: 76px;
 `;
 
 export const SkillsContent = styled.div`

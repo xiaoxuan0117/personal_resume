@@ -6,6 +6,7 @@ export const WorksWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 200px;
+  padding-top: 76px;
 `;
 
 export const WorksContent = styled.div`
