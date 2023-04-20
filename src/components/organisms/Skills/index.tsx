@@ -13,25 +13,10 @@ export interface ISkillsProps {}
 
 export default function Skills(props: ISkillsProps) {
   const skillsRef = useRef(null);
-  const skillsContentRef = useRef(null);
   const decoRef = useRef(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.to(skillsContentRef.current, {
-        y: 50,
-        scrollTrigger: {
-          trigger: skillsRef.current,
-          scrub: 1,
-          start: "top top",
-          // markers: {
-          //   startColor: "purple",
-          //   endColor: "fuchsia",
-          //   fontSize: "3rem",
-          // },
-        },
-      });
-
       gsap.to(decoRef.current, {
         y: -200,
         scrollTrigger: {
@@ -61,7 +46,7 @@ export default function Skills(props: ISkillsProps) {
         top="50%"
         rotate={-90}
       />
-      <SkillsContent ref={skillsContentRef}>
+      <SkillsContent>
         <Title>Skills</Title>
         <Skill
           title="Web Developement"

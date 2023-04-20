@@ -27,6 +27,7 @@ export const Left = styled.div`
 
 export const Right = styled.div`
   position: relative;
+  left: 50px;
   height: 100%;
   flex: 1;
   display: flex;
