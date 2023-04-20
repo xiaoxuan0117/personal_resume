@@ -17,6 +17,7 @@ export const WorkContent = styled.div<{ index: number }>`
 
 export const Detail = styled.div<{ index: number }>`
   position: absolute;
+  z-index: 5;
   left: ${(props) => props.index % 2 === 0 && "0"};
   right: ${(props) => props.index % 2 !== 0 && "0"};
   top: 200px;
@@ -87,6 +88,15 @@ export const Preview = styled.div<{ index: number }>`
     height: 100%;
     border-radius: 10px;
     box-shadow: -10px -10px 10px 0 ${(props) => props.theme.lightShadow};
+  }
+
+  & > .swiper {
+    width: 100%;
+    height: 100%;
+
+    & > .swiper-pagination-bullet {
+      background-color: ${(props) => props.theme.gray};
+    }
   }
 
   & > a {

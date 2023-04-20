@@ -27,9 +27,15 @@ export default function Works(props: IWorksProps) {
     tags: ["React", "Next.js", "TypeScript", "GraphQL", "Apollo"],
     description:
       "實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與 PM 、後端溝通的能力...",
-    images: ["/images/work_issues.png"],
-    links: ["https://taskapp-vife.onrender.com/"],
-    github: ["https://github.com/Xiaoxuan0117"],
+    images: ["/images/work_issues.png", "/images/work_issues_landing.png"],
+    links: [
+      "https://taskapp-vife.onrender.com/",
+      "https://taskapp-vife.onrender.com/",
+    ],
+    github: [
+      "https://github.com/Xiaoxuan0117",
+      "https://github.com/Xiaoxuan0117",
+    ],
     index: 1,
   };
   const worksRef = useRef(null);

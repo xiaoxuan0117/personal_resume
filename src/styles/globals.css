@@ -384,3 +384,7 @@ template {
 [hidden] {
   display: none;
 }
+
+:root {
+  --swiper-theme-color: #555555 !important;
+}
