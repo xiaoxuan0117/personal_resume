@@ -9,8 +9,8 @@ import Image from "next/image";
 export interface IProjectProps {
   name: string;
   tags: string[];
-  summary: string;
-  list: string[];
+  summary: JSX.Element[] | undefined;
+  list?: string[];
 }
 
 export default function Project(props: IProjectProps) {
@@ -75,7 +75,7 @@ export default function Project(props: IProjectProps) {
         </div>
         <div className="projectSummary">{summary}</div>
         <ul>
-          {list.map((item) => (
+          {list?.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
