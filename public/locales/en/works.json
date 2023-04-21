@@ -2,5 +2,13 @@
   "github-issues": "GitHub Issues Management System",
   "github-issues-dsc": "This is a website that imitates Github Issues. It uses Github API to obtain data and uses Github OAuth to log in. You can browse your own Issues, search for related issues, and add, edit, and delete Issues.",
   "ocean-pollution": "Introduction to Ocean Pollution",
-  "ocean-pollution-dsc": "This is a webpage about ocean pollution, made with React project created by Vite and styled with Sass."
+  "ocean-pollution-dsc": "This is a webpage about ocean pollution, made with React project created by Vite and styled with Sass.",
+  "ai": "Python X AI",
+  "ai-dsc": "This is a project using the Python language to implement AI. The packages used include Numpy, Matplotlib, keras, and tensorflow to create a multi-layer perceptron model that distinguishes black and white in Tai Chi.",
+  "data-structure": "Data Structure",
+  "data-structure-dsc": "Use c++ to complete sorting methods such as insertion sort, merge sort, heap sort and quick sort",
+  "project-management": "Project Management System",
+  "project-management-dsc": "This is a project for university graduation. We used Microsoft Project to make a project management system to optimize the factory operation process, and created the customized functions in the system through Visual Basic Application",
+  "react-native": "Tainan Restaurant App",
+  "react-native-dsc": "This is a simple APP made with React Native. You can view the information of Tainan restaurants. The APP includes functions such as Tab page change, list sliding, and API request."
 }

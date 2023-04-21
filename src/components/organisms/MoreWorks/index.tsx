@@ -9,6 +9,7 @@ import Links from "../../molecules/Links";
 import DecoText from "../../atoms/DecoText";
 import Work from "../../molecules/Work";
 import MoreWork from "../../molecules/MoreWork";
+import { moreWorks } from "../../../../public/data/works";
 
 export interface IMoreWorksProps {}
 
@@ -48,10 +49,9 @@ export default function MoreWorks(props: IMoreWorksProps) {
     <MoreWorksWrapper ref={moreWorksRef}>
       <MoreWorksContent>
         <DecoText decoRef={decoRef} text="More Works" quantity={8} left="40%" />
-        <MoreWork {...moreWorkDetailZero} />
-        <MoreWork {...moreWorkDetailZero} />
-        <MoreWork {...moreWorkDetailZero} />
-        <MoreWork {...moreWorkDetailZero} />
+        {moreWorks.map((work) => (
+          <MoreWork key={work.id} {...work} />
+        ))}
       </MoreWorksContent>
     </MoreWorksWrapper>
   );

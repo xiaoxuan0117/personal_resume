@@ -50,3 +50,38 @@ export const works = [
     ],
   },
 ];
+
+export const moreWorks = [
+  {
+    id: 1,
+    title: "ai",
+    tags: ["Python", "AI"],
+    description: "ai-dsc",
+    image: "/images/aiIcon.svg",
+    link: "https://colab.research.google.com/drive/1afB9sbL-rDFuvBN_XRGOcLaI6XqXvqB6",
+  },
+  {
+    id: 2,
+    title: "data-structure",
+    tags: ["c++"],
+    description: "data-structure-dsc",
+    image: "/images/dataStructureIcon.svg",
+    link: "https://github.com/xiaoxuan0117/data_structure_exercise",
+  },
+  {
+    id: 3,
+    title: "project-management",
+    tags: ["Microsoft Project", "Visual Basic Application"],
+    description: "project-management-dsc",
+    image: "/images/projectManageIcon.svg",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "react-native",
+    tags: ["React-native", "Redux"],
+    description: "react-native-dsc",
+    image: "/images/reactNativeIcon.svg",
+    link: "https://github.com/xiaoxuan0117/Tainan_Restaurant_App",
+  },
+];

@@ -4,5 +4,13 @@
   "ocean-pollution": "海洋汙染介紹網頁",
   "ocean-pollution-dsc": "這是一個介紹海洋汙染的網頁，使用 Vite 創建的 React 專案來製作，並用 Sass 撰寫樣式。",
   "music": "音樂介紹網頁",
-  "music-dsc": "這是一個介紹音樂的專案，主要由三個靜態網頁所組成，並分別代表了不同的音樂曲風，歡迎在這裡探索多元的音樂!"
+  "music-dsc": "這是一個介紹音樂的專案，主要由三個靜態網頁所組成，並分別代表了不同的音樂曲風，歡迎在這裡探索多元的音樂!",
+  "ai": "Python X AI",
+  "ai-dsc": "這是一個使用 Python 語言來實作 AI 的專案，用到的套件有 Numpy、Matplotlib、keras、tensorflow，製作出分辨太極圖中黑白兩色的多層感知器模型",
+  "data-structure": "資料結構",
+  "data-structure-dsc": "使用 c++ 完成 insertion sort、merge sort、heap sort 和 quick sort 等排序方法",
+  "project-management": "專案管理系統",
+  "project-management-dsc": "這是大學畢業專題，我們使用了 Microsoft Project 製作專案管理系統，以優化工廠運作流程，並透過 Visual Basic Application 實現系統中客製化功能",
+  "react-native": "台南餐廳列表",
+  "react-native-dsc": "這是一個使用 React Native 製作的簡易 APP，可以查看到台南餐廳的資訊，包含有 Tab 換頁、清單滑動和請求 API 等功能。"
 }

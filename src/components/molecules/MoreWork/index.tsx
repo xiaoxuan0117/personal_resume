@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "next-i18next";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -11,11 +12,12 @@ export interface IMoreWorkProps {
   tags: string[];
   description: string;
   image: string;
-  github: string;
+  link: string;
 }
 
 export default function MoreWork(props: IMoreWorkProps) {
-  const { title, tags, description, image, github } = props;
+  const { t } = useTranslation(["works"]);
+  const { title, tags, description, image, link } = props;
 
   const moreWorkRef = useRef(null);
 
@@ -46,12 +48,12 @@ export default function MoreWork(props: IMoreWorkProps) {
     <MoreWorkWrapper ref={moreWorkRef}>
       <MoreWorkContent>
         <Left>
-          <Image src={image} fill alt="ai" />
+          <Image src={image} fill alt={title} />
         </Left>
         <Right>
           <div className="title">
-            <a href={github} target="_blank">
-              {title}
+            <a href={link} target="_blank">
+              {t(`${title}`)}
             </a>
           </div>
           <div className="moreWorkTags">
@@ -61,7 +63,7 @@ export default function MoreWork(props: IMoreWorkProps) {
               </div>
             ))}
           </div>
-          <div className="dsc">{description}</div>
+          <div className="dsc">{t(`${description}`)}</div>
         </Right>
       </MoreWorkContent>
     </MoreWorkWrapper>
