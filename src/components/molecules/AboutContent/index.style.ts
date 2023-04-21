@@ -56,7 +56,10 @@ export const Content = styled.div`
   font-weight: 400;
   line-height: 23px;
 
-  ::selection {
-    background-color: #e1e2db;
+  & > p {
+    margin: 5px 0;
+    ::selection {
+      background-color: #e1e2db;
+    }
   }
 `;

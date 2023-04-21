@@ -42,7 +42,13 @@ export default function AboutContent(props: IAboutContentProps) {
         </Left>
         <Right>
           <Title>{t("title")}</Title>
-          <Content>{t("description")}</Content>
+          <Content>
+            {t("description")
+              .split("\n")
+              .map((dsc) => (
+                <p key={dsc}>{dsc}</p>
+              ))}
+          </Content>
         </Right>
       </AboutContentFlex>
     </AboutContentWrapper>
