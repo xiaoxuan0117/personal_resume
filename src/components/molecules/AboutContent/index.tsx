@@ -10,6 +10,7 @@ import {
   Content,
 } from "./index.style";
 import Image from "next/image";
+import { newLine } from "../../../util";
 
 export interface IAboutContentProps {
   contentRef: React.RefObject<HTMLDivElement>;
@@ -42,13 +43,7 @@ export default function AboutContent(props: IAboutContentProps) {
         </Left>
         <Right>
           <Title>{t("title")}</Title>
-          <Content>
-            {t("description")
-              .split("\n")
-              .map((dsc) => (
-                <p key={dsc}>{dsc}</p>
-              ))}
-          </Content>
+          <Content>{newLine(t("description"))}</Content>
         </Right>
       </AboutContentFlex>
     </AboutContentWrapper>
