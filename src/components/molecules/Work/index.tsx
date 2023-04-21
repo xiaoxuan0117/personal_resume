@@ -77,6 +77,7 @@ export default function Work(props: IWorkProps) {
             <Swiper
               spaceBetween={30}
               effect={"fade"}
+              loop={true}
               pagination={{
                 clickable: true,
               }}
