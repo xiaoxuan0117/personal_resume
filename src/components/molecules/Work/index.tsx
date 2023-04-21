@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "next-i18next";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -33,6 +34,7 @@ export interface IWorkProps {
 }
 
 export default function Work(props: IWorkProps) {
+  const { t } = useTranslation(["works"]);
   const { title, tags, description, images, links, github, index } = props;
 
   const workRef = useRef(null);
@@ -99,7 +101,7 @@ export default function Work(props: IWorkProps) {
           )}
         </Preview>
         <Detail index={index} ref={detailRef}>
-          <div className="title">{title}</div>
+          <div className="title">{t(`${title}`)}</div>
           <div className="worksTags">
             {tags.map((item) => (
               <div key={item} className="tag">
@@ -107,7 +109,7 @@ export default function Work(props: IWorkProps) {
               </div>
             ))}
           </div>
-          <div className="dsc">{description}</div>
+          <div className="dsc">{t(`${description}`)}</div>
           <div className="button">
             <a href={github[0]} className="repo" target="_blank">
               <Button label="Learn More" />

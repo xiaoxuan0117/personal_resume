@@ -1,0 +1,52 @@
+export const works = [
+  {
+    id: 1,
+    title: "github-issues",
+    tags: [
+      "React",
+      "Redux-toolkit",
+      "React router",
+      "TypeScript",
+      "Storybook",
+      "Sass",
+      "axios",
+      "Github OAuth",
+      "Express",
+      "React-Markdown",
+    ],
+    description: "github-issues-dsc",
+    images: ["/images/work_issues.png"],
+    links: ["https://taskapp-vife.onrender.com/"],
+    github: ["https://github.com/xiaoxuan0117/task_app"],
+  },
+  {
+    id: 2,
+    title: "ocean-pollution",
+    tags: ["React", "TypeScript", "Sass", "gsap", "Vite"],
+    description: "ocean-pollution-dsc",
+    images: ["/images/work_issues.png"],
+    links: ["https://xiaoxuan-resume.onrender.com/"],
+    github: ["https://github.com/xiaoxuan0117/xiaoxuan_resume"],
+  },
+  {
+    id: 3,
+    title: "music",
+    tags: ["JavaScript", "CSS", "HTML"],
+    description: "music-dsc",
+    images: [
+      "/images/work_issues.png",
+      "/images/work_issues.png",
+      "/images/work_issues.png",
+    ],
+    links: [
+      "https://xiaoxuan0117.github.io/webDesign_Kpop/",
+      "https://xiaoxuan0117.github.io/webDesign_R_and_B/",
+      "https://xiaoxuan0117.github.io/webDesign_Rap/",
+    ],
+    github: [
+      "https://github.com/xiaoxuan0117/webDesign_Kpop",
+      "https://github.com/xiaoxuan0117/webDesign_R_and_B/",
+      "https://github.com/xiaoxuan0117/webDesign_Rap",
+    ],
+  },
+];

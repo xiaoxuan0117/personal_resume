@@ -39,7 +39,8 @@ export const Detail = styled.div<{ index: number }>`
     margin-bottom: 12px;
 
     & .tag {
-      margin-right: 10px;
+      font-size: 12px;
+      margin: 3px 5px 3px 0;
     }
   }
 

@@ -4,41 +4,14 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import { WorksWrapper, WorksContent, Title } from "./index.style";
-import Button from "../../atoms/Button";
-import Links from "../../molecules/Links";
 import DecoText from "../../atoms/DecoText";
 import Work from "../../molecules/Work";
 import MoreWorks from "../MoreWorks";
+import { works } from "../../../../public/data/works";
 
 export interface IWorksProps {}
 
 export default function Works(props: IWorksProps) {
-  const workDetailZero = {
-    title: "GitHub issues 管理系統",
-    tags: ["React", "Next.js", "TypeScript", "GraphQL", "Apollo"],
-    description:
-      "實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與 PM 、後端溝通的能力實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與 PM 、後端溝通的能力",
-    images: ["/images/work_issues.png"],
-    links: ["https://taskapp-vife.onrender.com/"],
-    github: ["https://github.com/Xiaoxuan0117"],
-    index: 0,
-  };
-  const workDetailOne = {
-    title: "GitHub issues 管理系統",
-    tags: ["React", "Next.js", "TypeScript", "GraphQL", "Apollo"],
-    description:
-      "實習期間有獨立完成網站維護的經驗，其中包含有電商、品牌官網和點數管理系統等類型的網站，過程中也累積了與 PM 、後端溝通的能力...",
-    images: ["/images/work_issues.png", "/images/work_issues_landing.png"],
-    links: [
-      "https://taskapp-vife.onrender.com/",
-      "https://taskapp-vife.onrender.com/",
-    ],
-    github: [
-      "https://github.com/Xiaoxuan0117",
-      "https://github.com/Xiaoxuan0117",
-    ],
-    index: 1,
-  };
   const worksRef = useRef(null);
   const worksContentRef = useRef(null);
   const decoRef = useRef(null);
@@ -82,8 +55,9 @@ export default function Works(props: IWorksProps) {
       <WorksContent>
         <Title>Works.</Title>
         <DecoText decoRef={decoRef} text="Works" quantity={8} left="-40%" />
-        <Work {...workDetailZero} />
-        <Work {...workDetailOne} />
+        {works.map((work, index) => (
+          <Work key={work.id} {...work} index={index} />
+        ))}
         <MoreWorks />
       </WorksContent>
     </WorksWrapper>

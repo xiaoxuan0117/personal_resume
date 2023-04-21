@@ -1,0 +1,8 @@
+{
+  "github-issues": "GitHub Issues 管理系統",
+  "github-issues-dsc": "這是一個模仿 Github Issues 的網站，使用 Github API 來取得資料，並且運用 Github OAuth 來登入，可以瀏覽自己的 Issue，也可以搜尋相關的 issue，並且可以新增、編輯、刪除 Issue。",
+  "ocean-pollution": "海洋汙染介紹網頁",
+  "ocean-pollution-dsc": "這是一個介紹海洋汙染的網頁，使用 Vite 創建的 React 專案來製作，並用 Sass 撰寫樣式。",
+  "music": "音樂介紹網頁",
+  "music-dsc": "這是一個介紹音樂的專案，主要由三個靜態網頁所組成，並分別代表了不同的音樂曲風，歡迎在這裡探索多元的音樂!"
+}
