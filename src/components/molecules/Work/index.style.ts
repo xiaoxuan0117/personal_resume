@@ -73,7 +73,7 @@ export const Preview = styled.div<{ index: number }>`
   position: relative;
   box-sizing: border-box;
   width: 651px;
-  height: 332px;
+  height: 380px;
   padding: 12px;
   background-color: ${(props) => props.theme.primary};
   border-radius: 10px;

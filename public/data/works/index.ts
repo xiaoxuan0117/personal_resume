@@ -15,9 +15,9 @@ export const works = [
       "React-Markdown",
     ],
     description: "github-issues-dsc",
-    images: ["/images/work_issues.png"],
-    links: ["https://taskapp-vife.onrender.com/"],
-    github: ["https://github.com/xiaoxuan0117/task_app"],
+    images: ["/images/github_issues.gif"],
+    links: ["https://issueapp.onrender.com/"],
+    github: ["https://github.com/xiaoxuan0117/issue_app"],
   },
   {
     id: 2,
