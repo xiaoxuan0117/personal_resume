@@ -51,19 +51,17 @@ export default function MoreWork(props: IMoreWorkProps) {
           <Image src={image} fill alt={title} />
         </Left>
         <Right>
-          <div className="title">
-            <a href={link} target="_blank">
-              {t(`${title}`)}
-            </a>
-          </div>
-          <div className="moreWorkTags">
-            {tags.map((item) => (
-              <div key={item} className="tag">
-                #{item}
-              </div>
-            ))}
-          </div>
-          <div className="dsc">{t(`${description}`)}</div>
+          <a href={link} target="_blank">
+            <div className="title">{t(`${title}`)}</div>
+            <div className="moreWorkTags">
+              {tags.map((item) => (
+                <div key={item} className="tag">
+                  #{item}
+                </div>
+              ))}
+            </div>
+            <div className="dsc">{t(`${description}`)}</div>
+          </a>
         </Right>
       </MoreWorkContent>
     </MoreWorkWrapper>

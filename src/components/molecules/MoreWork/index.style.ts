@@ -27,16 +27,24 @@ export const Right = styled.div`
   position: relative;
   flex: 1;
 
-  & > .title {
+  & > a {
     position: relative;
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 4px;
+    text-decoration: none;
+    color: ${(props) => props.theme.gray};
 
-    & > a {
+    :hover {
+      & > .title::before {
+        width: 100%;
+      }
+    }
+
+    & > .title {
+      display: flex;
       position: relative;
-      text-decoration: none;
-      color: ${(props) => props.theme.gray};
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      padding: 5px 0;
 
       ::before {
         display: block;
@@ -50,37 +58,31 @@ export const Right = styled.div`
         background-color: ${(props) => props.theme.lightGray};
         transition: all 0.5s;
       }
+    }
 
-      :hover {
-        ::before {
-          width: 100%;
-        }
+    & > .moreWorkTags {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+
+      & .tag {
+        margin-right: 10px;
       }
     }
-  }
 
-  & > .moreWorkTags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 12px;
-
-    & .tag {
-      margin-right: 10px;
+    & > .dsc {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      line-height: 20px;
+      margin-bottom: 15px;
     }
-  }
 
-  & > .dsc {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    line-height: 20px;
-    margin-bottom: 15px;
-  }
-
-  & > ul li {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    line-height: 20px;
+    & > ul li {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      line-height: 20px;
+    }
   }
 `;
