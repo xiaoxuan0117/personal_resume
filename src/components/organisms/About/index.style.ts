@@ -8,4 +8,8 @@ export const AboutWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 76px;
+
+  & ::selection {
+    background-color: #e1e2db;
+  }
 `;

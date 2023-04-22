@@ -8,16 +8,16 @@ export const SkillsWrapper = styled.div`
   width: 100%;
   margin-bottom: 200px;
   padding-top: 76px;
+
+  & ::selection {
+    background-color: #e1e2db;
+  }
 `;
 
 export const SkillsContent = styled.div`
   position: relative;
   width: 70%;
   margin-bottom: 11px;
-
-  ::selection {
-    background-color: #e1e2db;
-  }
 `;
 
 export const Title = styled.div`
@@ -27,8 +27,4 @@ export const Title = styled.div`
   font-weight: 700;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
-
-  ::selection {
-    background-color: #e1e2db;
-  }
 `;

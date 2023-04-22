@@ -7,6 +7,10 @@ export const WorksWrapper = styled.div`
   align-items: center;
   margin-bottom: 200px;
   padding-top: 76px;
+
+  & ::selection {
+    background-color: #e1e2db;
+  }
 `;
 
 export const WorksContent = styled.div`

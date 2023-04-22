@@ -5,15 +5,15 @@ export const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  & ::selection {
+    background-color: #e1e2db;
+  }
 `;
 
 export const ContactContent = styled.div`
   position: relative;
   margin-bottom: 11px;
-
-  ::selection {
-    background-color: #e1e2db;
-  }
 `;
 
 export const Title = styled.div`
@@ -24,8 +24,4 @@ export const Title = styled.div`
   font-weight: 700;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
-
-  ::selection {
-    background-color: #e1e2db;
-  }
 `;
