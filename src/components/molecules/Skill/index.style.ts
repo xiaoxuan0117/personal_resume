@@ -12,7 +12,7 @@ export const SkillContent = styled.div`
   display: flex;
   gap: 23px;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 export const Left = styled.div`
@@ -37,5 +37,14 @@ export const Right = styled.div`
 
   & > .skillItem {
     line-height: 30px;
+  }
+
+  & ul {
+    width: 100%;
+    padding: 0 20px;
+
+    & li {
+      padding: 5px;
+    }
   }
 `;

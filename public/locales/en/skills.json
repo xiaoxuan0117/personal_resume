@@ -1,0 +1,9 @@
+{
+  "basic": "Familiar with making complete web pages with HTML, CSS, JavaScript, TypeScript, React.",
+  "react-package": "Use related packages, such as planning routes with React-router and managing state with Redux",
+  "api": "know how to use NodeJS to set up a server to create API, and use an asynchronous method to call the API at the front-end to obtain data.",
+  "style": "Ability to style web pages using CSS-in-JS and know how to use CSS preprocessors such as Sass.",
+  "test": "Know how to write tests with Jest and Storybook.",
+  "tool": "Know how to package web pages with Webpack and use Git for version control.",
+  "i18next": "Know how to make a multilingual website with i18next."
+}

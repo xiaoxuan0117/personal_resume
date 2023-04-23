@@ -1,0 +1,9 @@
+{
+  "basic": "熟悉用 HTML、CSS、JavaScript、TypeScript、React 製作出完整網頁",
+  "react-package": "了解如何使用相關套件，例如用 React-router 規劃路由，以及用 Redux 管理狀態",
+  "api": "了解如何用 NodeJS 架設伺服器製作 API ，並以非同步方法於前端網頁進行串接",
+  "style": "有能力使用 CSS-in-JS 製作出網頁樣式，並了解如何使用 CSS 預處理器，例如 Sass",
+  "test": "了解如何透過 Jest 撰寫測試，以及使用 Storybook 撰寫元件測試",
+  "tool": "了解如何使用 Webpack 打包網頁，並運用 Git 進行版本控制",
+  "i18next": "了解如何使用 i18next 製作多語系網站"
+}

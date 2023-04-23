@@ -8,6 +8,7 @@ import Button from "../../atoms/Button";
 import Links from "../../molecules/Links";
 import DecoText from "../../atoms/DecoText";
 import Skill from "../../molecules/Skill";
+import { skills } from "../../../../public/data/skills";
 
 export interface ISkillsProps {}
 
@@ -56,16 +57,19 @@ export default function Skills(props: ISkillsProps) {
             "JavaScript",
             "TypeScript",
             "React",
-            "NodeJS",
             "React-router",
             "Redux",
             "Redux-middleware",
-            "axios",
-            "Storybook",
-            "Jest",
+            "NodeJS",
             "Express",
+            "axios",
+            "Jest",
+            "Storybook",
             "Webpack",
+            "Git",
+            "i18next",
           ]}
+          skillList={skills}
         />
         <Skill title="UI Design" skillGroup={["Figma", "Adobe XD"]} />
       </SkillsContent>
