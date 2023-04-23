@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
   position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  width: 100vw;
+  height: 200px;
 
   & ::selection {
     background-color: #e1e2db;
@@ -13,6 +12,8 @@ export const ContactWrapper = styled.div`
 
 export const ContactContent = styled.div`
   position: relative;
+  /* display: flex;
+  flex-direction: column; */
   margin-bottom: 11px;
 `;
 

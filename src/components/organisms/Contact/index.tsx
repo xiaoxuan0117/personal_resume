@@ -9,7 +9,7 @@ export interface IContactProps {}
 export default function Contact(props: IContactProps) {
   return (
     <ContactWrapper>
-      <DecoText text="Xiao-xuan Pan" quantity={1} top="100%" />
+      <DecoText text="Xiao-xuan Pan" quantity={1} top="50%" />
       <ContactContent>
         <Title>Contact Me.</Title>
       </ContactContent>
