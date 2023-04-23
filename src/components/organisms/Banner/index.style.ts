@@ -12,8 +12,22 @@ export const BannerWrapper = styled.div`
 
 export const BannerContent = styled.div`
   position: relative;
+  width: 100%;
   top: 40%;
   left: 25%;
+
+  @media screen and (max-width: 800px) {
+    position: absolute;
+    top: 35%;
+    left: 18%;
+  }
+
+  @media screen and (max-width: 600px) {
+    position: absolute;
+    width: 80%;
+    top: 30%;
+    left: 10%;
+  }
 `;
 
 export const Title = styled.div`

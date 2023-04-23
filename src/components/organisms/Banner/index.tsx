@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { BannerWrapper, BannerContent, Title, Subtitle } from "./index.style";
 import Button from "../../atoms/Button";
 import Links from "../../molecules/Links";
+import { newLine } from "../../../util";
 
 export interface IBannerProps {}
 
@@ -41,7 +42,7 @@ export default function Banner(props: IBannerProps) {
       <BannerContent ref={bannerContentRef}>
         <Title>Xiao-xuan Pan</Title>
         <Subtitle>
-          {t("subtitle")}
+          {newLine(t("subtitle"))}
           <br />
           {t("scroll")}
         </Subtitle>
