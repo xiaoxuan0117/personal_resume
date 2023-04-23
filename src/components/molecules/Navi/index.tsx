@@ -5,6 +5,7 @@ import {
   Title,
   MenuWrapper,
   Menu,
+  MenuIcon,
 } from "./index.style";
 import Button from "../../atoms/Button";
 
@@ -14,6 +15,7 @@ export interface INaviProps {
 
 export default function Navi(props: INaviProps) {
   const [scroll, setScroll] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const { menu } = props;
 
   useEffect(() => {
@@ -29,7 +31,7 @@ export default function Navi(props: INaviProps) {
     <NaviWrapper scroll={scroll}>
       <NaviContent>
         <Title href="/">Xiao-xuan resume</Title>
-        <MenuWrapper>
+        <MenuWrapper open={openMenu}>
           {menu.map((item) => (
             <Menu key={item}>
               <a href={`#${item.toLocaleLowerCase()}`}>
@@ -38,6 +40,16 @@ export default function Navi(props: INaviProps) {
             </Menu>
           ))}
         </MenuWrapper>
+        <MenuIcon
+          onClick={() => {
+            setOpenMenu(!openMenu);
+          }}
+          open={openMenu}
+        >
+          <div className="top"></div>
+          <div className="middle"></div>
+          <div className="bottom"></div>
+        </MenuIcon>
       </NaviContent>
     </NaviWrapper>
   );
