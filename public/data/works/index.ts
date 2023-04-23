@@ -34,7 +34,7 @@ export const works = [
     tags: ["Next", "styled-components", "gsap", "i18next"],
     description: "resume-dsc",
     images: ["/images/resume_1.png"],
-    links: ["https://xiaoxuan0117.github.io/webDesign_Kpop/"],
+    links: ["https://xiaoxuanresume.vercel.app/"],
     github: ["https://github.com/xiaoxuan0117/personal_resume"],
   },
 ];
