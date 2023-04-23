@@ -12,8 +12,6 @@ export const ContactWrapper = styled.div`
 
 export const ContactContent = styled.div`
   position: relative;
-  /* display: flex;
-  flex-direction: column; */
   margin-bottom: 11px;
 `;
 
@@ -25,4 +23,9 @@ export const Title = styled.div`
   font-weight: 700;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+    right: 80px;
+  }
 `;
