@@ -9,13 +9,14 @@ export interface IDecoTextProps {
   left?: string;
   top?: string;
   rotate?: number;
+  type?: string;
 }
 
 export default function DecoText(props: IDecoTextProps) {
-  const { decoRef, text, quantity, left, top, rotate } = props;
+  const { decoRef, text, quantity, left, top, rotate, type } = props;
   const content = Array(quantity).fill(text);
   return (
-    <Deco ref={decoRef} left={left} top={top} rotate={rotate}>
+    <Deco ref={decoRef} left={left} top={top} rotate={rotate} type={type}>
       {content.map((item, index) => (
         <DecoContent key={index}>{item}</DecoContent>
       ))}

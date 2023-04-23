@@ -18,6 +18,10 @@ export const SkillsContent = styled.div`
   position: relative;
   width: 70%;
   margin-bottom: 11px;
+
+  @media screen and (max-width: 600px) {
+    width: 85%;
+  }
 `;
 
 export const Title = styled.div`

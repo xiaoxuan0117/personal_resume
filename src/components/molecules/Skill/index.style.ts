@@ -13,6 +13,10 @@ export const SkillContent = styled.div`
   gap: 23px;
   flex-direction: row;
   align-items: flex-start;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 export const Left = styled.div`
@@ -24,6 +28,10 @@ export const Left = styled.div`
   text-align: end;
   white-space: pre-wrap;
   word-break: break-word;
+
+  @media screen and (max-width: 960px) {
+    text-align: start;
+  }
 `;
 
 export const Right = styled.div`

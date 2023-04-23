@@ -46,6 +46,7 @@ export default function Skills(props: ISkillsProps) {
         left="-23%"
         top="70%"
         rotate={-90}
+        type="skills"
       />
       <SkillsContent>
         <Title>Skills.</Title>

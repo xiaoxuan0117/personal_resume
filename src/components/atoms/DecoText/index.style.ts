@@ -4,6 +4,7 @@ export const Deco = styled.div<{
   left?: string;
   top?: string;
   rotate?: number;
+  type?: string;
 }>`
   display: flex;
   position: absolute;
@@ -11,6 +12,18 @@ export const Deco = styled.div<{
   top: ${(props) => (props.top ? props.top : "0")};
   left: ${(props) => (props.left ? props.left : "0")};
   transform: ${(props) => props.rotate && `rotateZ(${props.rotate}deg)`};
+
+  @media screen and (max-width: 960px) {
+    left: ${(props) => props.type === "skills" && "-30%"};
+  }
+
+  @media screen and (max-width: 750px) {
+    left: ${(props) => props.type === "skills" && "-35%"};
+  }
+
+  @media screen and (max-width: 700px) {
+    display: ${(props) => props.type === "skills" && "none"};
+  }
 `;
 
 export const DecoContent = styled.div`
