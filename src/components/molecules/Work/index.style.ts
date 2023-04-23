@@ -5,14 +5,26 @@ export const WorkWrapper = styled.div`
   width: 100%;
   height: max-content;
   margin-bottom: 200px;
+
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 300px;
+  }
+
+  @media screen and (max-width: 960px) {
+    margin-bottom: 100px;
+  }
 `;
 
 export const WorkContent = styled.div<{ index: number }>`
   position: relative;
   display: flex;
-  justify-content: ${(props) =>
-    props.index % 2 === 0 ? "flex-end" : "flex-start"};
+  flex-direction: ${(props) => (props.index % 2 === 0 ? "row-reverse" : "row")};
   align-items: flex-end;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 export const Detail = styled.div<{ index: number }>`
@@ -26,6 +38,23 @@ export const Detail = styled.div<{ index: number }>`
   border-radius: 8px;
   padding: 21px 26px;
   box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
+
+  &.active {
+    transform: translateY(-20px);
+  }
+
+  @media screen and (max-width: 1200px) {
+    position: absolute;
+    top: 300px;
+  }
+
+  @media screen and (max-width: 960px) {
+    position: unset;
+    width: unset;
+    margin-top: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  }
 
   & > .title {
     font-size: 16px;
@@ -69,26 +98,21 @@ export const Detail = styled.div<{ index: number }>`
   }
 `;
 
-export const Preview = styled.div<{ index: number }>`
-  position: relative;
+export const Preview = styled.div<{ index: number; width: number }>`
   box-sizing: border-box;
-  width: 651px;
-  height: 380px;
+  width: 70%;
+  height: ${(props) => (props.width ? props.width * 0.6 : 0)}px;
   padding: 12px;
   background-color: ${(props) => props.theme.primary};
   border-radius: 10px;
   box-shadow: 4px 4px 8px 0 ${(props) => props.theme.darkShadow};
 
-  ::before {
-    display: block;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 960px) {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: -10px -10px 10px 0 ${(props) => props.theme.lightShadow};
   }
 
   & > .swiper {
@@ -139,6 +163,7 @@ export const ImageBox = styled.div`
     letter-spacing: 0.05em;
     color: ${(props) => props.theme.white};
     transition: all 0.5s;
+    white-space: nowrap;
   }
 
   :hover {

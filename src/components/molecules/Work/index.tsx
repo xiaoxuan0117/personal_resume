@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -36,15 +36,19 @@ export interface IWorkProps {
 export default function Work(props: IWorkProps) {
   const { t } = useTranslation(["works"]);
   const { title, tags, description, images, links, github, index } = props;
+  const [imageWidth, setImageWidth] = useState<number>(651);
 
-  const workRef = useRef(null);
-  const detailRef = useRef(null);
+  const workRef = useRef<HTMLDivElement>(null);
+  const profileRef = useRef<HTMLDivElement>(null);
+  const detailRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    setTimeout(() => {
+      console.log(profileRef.current?.clientHeight);
+    }, 3000);
     const ctx = gsap.context(() => {
       gsap.to(detailRef.current, {
-        yPercent: -20,
-        duration: 0.5,
         scrollTrigger: {
+          toggleClass: "active",
           trigger: detailRef.current,
           start: "top bottom",
           once: true,
@@ -62,10 +66,17 @@ export default function Work(props: IWorkProps) {
     };
   }, []);
 
+  useEffect(() => {
+    setImageWidth(profileRef.current?.clientWidth || 0);
+    window.addEventListener("resize", () => {
+      setImageWidth(profileRef.current?.clientWidth || 0);
+    });
+  }, [profileRef.current?.clientWidth, setImageWidth]);
+
   return (
     <WorkWrapper ref={workRef}>
       <WorkContent index={index}>
-        <Preview index={index}>
+        <Preview index={index} ref={profileRef} width={imageWidth || 0}>
           {images.length === 1 ? (
             <a href={links[0]} className="workUrl" target="_blank">
               <ImageBox>

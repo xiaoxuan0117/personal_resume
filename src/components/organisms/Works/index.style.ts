@@ -16,6 +16,10 @@ export const WorksWrapper = styled.div`
 export const WorksContent = styled.div`
   position: relative;
   width: 70%;
+
+  @media screen and (max-width: 600px) {
+    width: 85%;
+  }
 `;
 
 export const Title = styled.div`
