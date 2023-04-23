@@ -16,16 +16,6 @@ export interface IAboutContentProps {
   contentRef: React.RefObject<HTMLDivElement>;
 }
 
-// export const getStaticProps: GetStaticProps = async (context) => {
-//   const locale = context.locale!;
-
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale, ["about"])),
-//     },
-//   };
-// };
-
 export default function AboutContent(props: IAboutContentProps) {
   const { t } = useTranslation(["about"]);
   return (
@@ -39,7 +29,9 @@ export default function AboutContent(props: IAboutContentProps) {
             height={128}
             alt="me"
           />
-          <div>{t("name")}</div>
+          <div>
+            <span>{t("name")}</span>
+          </div>
         </Left>
         <Right>
           <Title>{t("title")}</Title>

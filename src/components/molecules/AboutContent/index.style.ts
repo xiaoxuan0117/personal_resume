@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const AboutContentWrapper = styled.div`
   position: relative;
   width: 70%;
+
+  @media screen and (max-width: 600px) {
+    width: 85%;
+  }
 `;
 
 export const AboutContentFlex = styled.div`
@@ -11,6 +15,10 @@ export const AboutContentFlex = styled.div`
   width: 100%;
   gap: 24px;
   flex-direction: row;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const Left = styled.div`
@@ -22,6 +30,15 @@ export const Left = styled.div`
     font-size: 20px;
     font-weight: 700;
     margin-top: 17px;
+  }
+
+  @media screen and (max-width: 600px) {
+    & > div {
+      position: relative;
+      bottom: 5px;
+      display: inline-block;
+      margin: 0 0 0 20px;
+    }
   }
 `;
 

@@ -12,4 +12,9 @@ export const AboutWrapper = styled.div`
   & ::selection {
     background-color: #e1e2db;
   }
+
+  @media screen and (max-width: 1023px) {
+    height: 80vh;
+    padding-top: 0px;
+  }
 `;
