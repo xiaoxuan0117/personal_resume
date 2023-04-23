@@ -13,6 +13,10 @@ export const LinksWrapper = styled.div`
     display: block;
     margin-bottom: 7px;
   }
+
+  @media (max-width: 768px) {
+    right: 10px;
+  }
 `;
 
 export const DecoLine = styled.div`

@@ -48,7 +48,8 @@ export const MenuWrapper = styled.div<{ open: boolean }>`
     align-items: end;
     position: absolute;
     right: 12px;
-    bottom: -5px;
+    bottom: 10px;
+    padding-top: 10px;
     transform: ${(props) =>
       props.open ? "translate(0%, 100%)" : "translate(100%, 100%)"};
   }
@@ -76,22 +77,27 @@ export const MenuIcon = styled.div<{ open: boolean }>`
   display: none;
   width: 20px;
   height: 20px;
+  padding: 5px;
+
+  :hover {
+    background-color: ${(props) => props.theme.lightGray};
+  }
 
   @media screen and (max-width: 800px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: ${(props) => (props.open ? "center" : "space-between")};
   }
 
   & > div {
-    width: ${(props) => (props.open ? "12px" : "20px")};
+    position: ${(props) => (props.open ? "absolute" : "relative")};
+    width: ${(props) => (props.open ? "23px" : "20px")};
     height: 2px;
-    margin: 5px 0;
     background-color: ${(props) => props.theme.gray};
     transition: all 0.5s ease-in-out;
 
     &.top {
-      position: ${(props) => (props.open ? "absolute" : "relative")};
-      top: 0;
-      right: 0;
       transform: ${(props) => (props.open ? "rotate(45deg)" : "rotate(0)")};
     }
 
@@ -100,9 +106,6 @@ export const MenuIcon = styled.div<{ open: boolean }>`
     }
 
     &.bottom {
-      position: ${(props) => (props.open ? "absolute" : "relative")};
-      bottom: 0;
-      right: 0;
       transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }

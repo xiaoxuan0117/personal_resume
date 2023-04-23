@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { isMobile } from "react-device-detect";
 import {
   NaviWrapper,
   NaviContent,
@@ -31,7 +32,19 @@ export default function Navi(props: INaviProps) {
     <NaviWrapper scroll={scroll}>
       <NaviContent>
         <Title href="/">Xiao-xuan resume</Title>
-        <MenuWrapper open={openMenu}>
+        <MenuWrapper
+          open={openMenu}
+          onMouseOver={
+            !isMobile
+              ? () => {
+                  setOpenMenu(true);
+                }
+              : () => {}
+          }
+          onMouseLeave={() => {
+            setOpenMenu(false);
+          }}
+        >
           {menu.map((item) => (
             <Menu key={item}>
               <a href={`#${item.toLocaleLowerCase()}`}>
@@ -43,6 +56,16 @@ export default function Navi(props: INaviProps) {
         <MenuIcon
           onClick={() => {
             setOpenMenu(!openMenu);
+          }}
+          onMouseOver={
+            !isMobile
+              ? () => {
+                  setOpenMenu(true);
+                }
+              : () => {}
+          }
+          onMouseLeave={() => {
+            setOpenMenu(false);
           }}
           open={openMenu}
         >
