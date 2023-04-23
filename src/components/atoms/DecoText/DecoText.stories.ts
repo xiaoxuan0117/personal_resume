@@ -14,6 +14,5 @@ export const Primary: Story = {
   args: {
     text: "About",
     quantity: 6,
-    from: "right",
   },
 };
