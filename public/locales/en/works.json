@@ -1,8 +1,10 @@
 {
   "github-issues": "GitHub Issues Management System",
   "github-issues-dsc": "This is a website that imitates Github Issues. It uses Github API to obtain data and uses Github OAuth to log in. You can browse your own Issues, search for related issues, and add, edit, and delete Issues.",
-  "ocean-pollution": "Introduction to Ocean Pollution",
-  "ocean-pollution-dsc": "This is a webpage about ocean pollution, made with React project created by Vite and styled with Sass.",
+  "marine-pollution": "Introduction to Marine Pollution",
+  "marine-pollution-dsc": "This is a webpage about marine pollution, made with React project created by Vite and styled with Sass.",
+  "resume": "Biography site",
+  "resume-dsc": "This is my personal resume page, made with the Next framework, with styled-components to write styles, and added i18next.",
   "ai": "Python X AI",
   "ai-dsc": "This is a project using the Python language to implement AI. The packages used include Numpy, Matplotlib, keras, and tensorflow to create a multi-layer perceptron model that distinguishes black and white in Tai Chi.",
   "data-structure": "Data Structure",
