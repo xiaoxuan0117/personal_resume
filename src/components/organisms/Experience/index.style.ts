@@ -17,6 +17,10 @@ export const ExperienceContent = styled.div`
   position: relative;
   text-align: start;
   width: 70%;
+
+  @media screen and (max-width: 600px) {
+    width: 85%;
+  }
 `;
 
 export const Title = styled.div`
