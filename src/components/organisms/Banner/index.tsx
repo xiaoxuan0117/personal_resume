@@ -46,7 +46,6 @@ export default function Banner(props: IBannerProps) {
           <br />
           {t("scroll")}
         </Subtitle>
-        <Button label="Download resume" />
       </BannerContent>
       <Links />
     </BannerWrapper>
