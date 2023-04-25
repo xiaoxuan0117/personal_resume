@@ -26,7 +26,7 @@ export const works = [
     description: "marine-pollution-dsc",
     images: ["/images/marine_pollution.gif"],
     links: ["https://marinepollution.onrender.com/"],
-    github: ["https://github.com/xiaoxuan0117/marine_pullution"],
+    github: ["https://github.com/xiaoxuan0117/marine_pollution"],
   },
   {
     id: 3,
