@@ -1,7 +1,7 @@
 {
   "sprout-duration": "2022/7 - 至今",
   "sprout-position": "新芽網路公司-前端開發實習生",
-  "sprout-summary": "實習期間有獨立完成網站維護的經驗，其中包含有電子商城、品牌官網和點數管理系統等類型的網站。\n這些網站的架構不盡相同，我接觸到的主要有 React 和 JQuery 兩種。\n以 React 為例，專案中有用到 Stroybook 製作 UI 元件，並透過 Redux 和 React Router 來管理資料跟路由，然後藉由 Webpack 進行打包。\n每個專案的修改皆運用 Git 進行版本控制，並搭配 GitLab 平台與同事協作。\n以下列出在各個專案中完成的工作項目。",
+  "sprout-summary": "實習期間有獨立完成網站維護的經驗，其中包含有電子商城、品牌官網和點數管理系統等類型的網站。\n這些網站的架構不盡相同，我接觸到的主要有 React 和 JQuery 兩種。\n以 React 為例，專案中有用到 Storybook 製作 UI 元件，並透過 Redux 和 React Router 來管理資料跟路由，然後藉由 Webpack 進行打包。\n每個專案的修改皆運用 Git 進行版本控制，並搭配 GitLab 平台與同事協作。\n以下列出在各個專案中完成的工作項目。",
   "sprout-cameraEC": "相機品牌電商優化",
   "sprout-cameraEC-summary": "在此專案中，我負責的項目是進行商品折扣的優化。\n因應客戶的需求，修改購物流程中各個折扣項目的計算邏輯。",
   "sprout-cameraEC-list-1": "串接 API 取得商品資訊",
