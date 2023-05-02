@@ -62,7 +62,7 @@ export const moreWorks = [
     tags: ["Microsoft Project", "Visual Basic Application"],
     description: "project-management-dsc",
     image: "/images/projectManageIcon.svg",
-    link: "#",
+    link: "https://drive.google.com/file/d/1MXJmFJcaz9jALWrUjv-m_4fq8fh4-Q8p/view?usp=share_link",
   },
   {
     id: 4,
