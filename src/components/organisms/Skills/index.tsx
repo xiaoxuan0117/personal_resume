@@ -63,7 +63,7 @@ export default function Skills(props: ISkillsProps) {
             "Redux-middleware",
             "NodeJS",
             "Express",
-            "axios",
+            "Axios",
             "Jest",
             "Storybook",
             "Webpack",
