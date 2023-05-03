@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import { LinksWrapper, DecoLine } from "./index.style";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,9 +6,15 @@ import Link from "next/link";
 export interface ILinksProps {}
 
 export default function Links(props: ILinksProps) {
-  const router = useRouter();
-  const { pathname } = router;
   const [lng, setLng] = useState<string>("en");
+
+  useEffect(() => {
+    const currentLng = window.location.pathname;
+    if (currentLng) {
+      const newLng = currentLng === "/zh-TW" ? "en" : "zh-TW";
+      setLng(newLng);
+    }
+  }, []);
   return (
     <LinksWrapper>
       <Link
