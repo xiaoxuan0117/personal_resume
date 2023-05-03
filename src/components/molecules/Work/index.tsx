@@ -42,9 +42,6 @@ export default function Work(props: IWorkProps) {
   const profileRef = useRef<HTMLDivElement>(null);
   const detailRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    setTimeout(() => {
-      console.log(profileRef.current?.clientHeight);
-    }, 3000);
     const ctx = gsap.context(() => {
       gsap.to(detailRef.current, {
         scrollTrigger: {

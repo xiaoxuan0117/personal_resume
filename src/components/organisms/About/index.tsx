@@ -16,7 +16,6 @@ export default function About(props: IAboutProps) {
   const decoRef = useRef(null);
 
   useEffect(() => {
-    console.log("contentRef.current", contentRef.current, decoRef.current);
     const ctx = gsap.context(() => {
       gsap.to(contentRef.current, {
         y: 50,
