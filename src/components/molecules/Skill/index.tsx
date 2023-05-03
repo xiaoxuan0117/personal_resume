@@ -48,7 +48,7 @@ export default function Skill(props: ISkillProps) {
         <Right ref={skillGroupRef}>
           {skillGroup.map((item) => (
             <div key={item} className="skillItem">
-              {item},&nbsp;
+              {item}.&nbsp;
             </div>
           ))}
           <ul>
