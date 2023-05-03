@@ -10,7 +10,7 @@ export const works = [
       "Storybook",
       "Sass",
       "axios",
-      "Github OAuth",
+      "GitHub OAuth",
       "Express",
       "React-Markdown",
     ],
