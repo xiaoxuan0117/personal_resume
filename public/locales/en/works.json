@@ -1,6 +1,6 @@
 {
   "github-issues": "GitHub Issues Management System",
-  "github-issues-dsc": "This is a website that imitates GitHub Issues. It uses GitHub API to obtain data and uses GitHub OAuth to log in. You can browse your own issues, search for related issues, and add, edit, and delete issues.Sorry, it may take 1-2 minutes for the site to start",
+  "github-issues-dsc": "This is a website that can manage GitHub Issues. It uses GitHub API to obtain data and uses GitHub OAuth to log in. You can browse your own issues, search for related issues, and add, edit, and delete issues.Sorry, it may take 1-2 minutes for the site to start",
   "marine-pollution": "Introduction to Marine Pollution",
   "marine-pollution-dsc": "This is a webpage about marine pollution, made with React project created by Vite and styled with Sass.",
   "resume": "Biography site",

@@ -1,6 +1,6 @@
 {
   "github-issues": "GitHub Issues 管理系統",
-  "github-issues-dsc": "這是一個模仿 GitHub Issues 的前後端分離網站，使用 GitHub API 來取得資料，並且運用 GitHub OAuth 來登入，可以瀏覽自己的 issue，也可以搜尋相關的 issue，並且可以新增、編輯、刪除 issue。(等候網站啟動需要 1 至 2 分鐘，敬請見諒)",
+  "github-issues-dsc": "這是一個管理 GitHub Issues 的前後端分離網站，使用 GitHub API 來取得資料，並且運用 GitHub OAuth 來登入，可以瀏覽自己的 issue，也可以搜尋相關的 issue，並且可以新增、編輯、刪除 issue。(等候網站啟動需要 1 至 2 分鐘，敬請見諒)",
   "marine-pollution": "海洋汙染介紹網頁",
   "marine-pollution-dsc": "這是一個結合大學時期製作的報告，主題為介紹海洋汙染的網頁，使用 Vite 創建的 React 專案來製作，並用 Sass 撰寫樣式。",
   "resume": "個人履歷網頁",
