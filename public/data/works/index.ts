@@ -21,6 +21,15 @@ export const works = [
   },
   {
     id: 2,
+    title: "tetris-game",
+    tags: ["React", "Redux-toolkit", "TypeScript"],
+    description: "tetris-game-dsc",
+    images: ["/images/tetris_game.gif"],
+    links: ["https://xiaoxuan0117.github.io/tetris_game"],
+    github: ["https://github.com/xiaoxuan0117/tetris_game"],
+  },
+  {
+    id: 3,
     title: "marine-pollution",
     tags: ["React", "TypeScript", "Sass", "gsap", "Vite"],
     description: "marine-pollution-dsc",
@@ -29,7 +38,7 @@ export const works = [
     github: ["https://github.com/xiaoxuan0117/marine_pollution"],
   },
   {
-    id: 3,
+    id: 4,
     title: "resume",
     tags: ["Next", "styled-components", "gsap", "i18next"],
     description: "resume-dsc",
