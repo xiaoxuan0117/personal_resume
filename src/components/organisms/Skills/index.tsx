@@ -69,6 +69,7 @@ export default function Skills(props: ISkillsProps) {
             "Webpack",
             "Git",
             "i18next",
+            "SQL",
           ]}
           skillList={skills}
         />

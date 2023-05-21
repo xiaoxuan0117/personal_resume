@@ -6,4 +6,5 @@ export const skills = [
   "test",
   "tool",
   "i18next",
+  "database",
 ];

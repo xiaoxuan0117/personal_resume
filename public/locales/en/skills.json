@@ -5,5 +5,7 @@
   "style": "Ability to style web pages using CSS-in-JS and know how to use CSS preprocessors such as Sass.",
   "test": "Know how to write tests with Jest and Storybook.",
   "tool": "Know how to package web pages with Webpack and use Git for version control.",
-  "i18next": "Know how to make a multilingual website with i18next."
+  "i18next": "Know how to make a multilingual website with i18next.",
+  "database": "Understand the basic concepts of databases and use MongoDB and MySQL to create databases."
+  
 }
